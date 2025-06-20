@@ -6,6 +6,7 @@ env:
   API_HOST: apps.itz-zaa1tc.hub04-lb.techzone.ibm.com
   PLATFORM_API_PREFIX: platform-api
   PROVIDER_ORG: cp4i-demo-org
+  INSECURE_SKIP_TLS_VERIFY: true
   API_FILES: <file/files name>
 
 jobs:
