@@ -1,0 +1,19 @@
+kind: DataPowerAssembly
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: GW Policy
+  namespace: Gestione Ordini
+  version: '1.0'
+  tags: []
+spec:
+  x-ibm-configuration:
+    gateway: datapower-api-gateway
+    assembly:
+      execute:
+        - client-security:
+            version: 2.0.0
+            title: client-security
+            stop-on-error: true
+            secret-required: true
+            extract-credential-method: header
+            client-auth-method: native
